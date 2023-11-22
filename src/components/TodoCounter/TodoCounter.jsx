@@ -1,4 +1,4 @@
-
+import './TodoCounter.scss'
 
 const TodoCounter = ({ total, completed }) => {
   return (

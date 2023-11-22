@@ -1,23 +1,36 @@
-import TodoCounter from './components/TodoCounter';
-import TodoSearch from './components/TodoSearch';
-import TodoList from './components/TodoList';
-import TodoItem from './components/TodoItem';
-import './App.css';
+
+import TodoCounter from './components/TodoCounter/TodoCounter';
+import TodoSearch from './components/TodoSearch/TodoSearch';
+import TodoList from './components/TodoList/TodoList';
+import TodoItem from './components/TodoItem/TodoItem';
+import CreateTodoButton from './components/CreateTodoButtom/CreateTodoButton'
+import './styles/global.scss';
+
+const defaultTodos = [
+  {text: 'cortar cebolla', completed: true},
+  {text: 'mercar', completed: false},
+  {text: 'hacer ensalada', completed: true},
+  {text: 'terminar el taller', completed: false},
+];
 
 const App = () => {
   return (
-    <div className="App">
-      <TodoCounter />
+    <>
+      <TodoCounter completed={16} total={25} />
       <TodoSearch />
 
       <TodoList>
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
+       {defaultTodos.map(todo => (
+        <TodoItem 
+        key={todo.text} 
+        text={todo.text} 
+        completed={todo.completed}
+      />
+       ))}
       </TodoList>
 
-     {/*  <CreateTodoButton /> */}
-    </div>
+      <CreateTodoButton />
+    </>
   );
 }
 

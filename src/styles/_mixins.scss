@@ -1,0 +1,61 @@
+@use './variables' as *;
+
+@mixin borderRadiusCards($top-right, $top-left, $bottom-right, $bottom-left) {
+  border-top-right-radius: $top-right;
+  border-top-left-radius: $top-left;
+  border-bottom-right-radius: $bottom-right;
+  border-bottom-left-radius: $bottom-left;
+}
+
+@mixin flexCenter($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin buttonStyle($width, $height, $border-radius, $color, $bg-color, $font-size) {
+  cursor: pointer;
+  width: $width;
+  height: $height;
+  border: none;
+  border-radius: $border-radius;
+  color: $color;
+  background-color: $bg-color;
+  font-size: $font-size;
+}
+
+@mixin removeHorizontalScroll {
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin inputCheckContainer {
+  width: 60%;
+  height: 22px;
+  @include flexCenter(row, flex-start, center);
+  .check-input {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid $secondary-text-color;
+    font-size: 1.6rem;
+    &:focus {
+      outline: 1px solid $primary-color;
+      border: none;
+    }
+    &:checked {
+      background-color: $primary-color;
+      border: none;
+      box-shadow: inset 0 0 0 1px $primary-color;
+    }
+  }
+  .check-label {
+    padding-left: 10px;
+    font-size: 1.5rem;
+    font-weight: $regular-weight;
+    color: $primary-text-color;
+  }
+}

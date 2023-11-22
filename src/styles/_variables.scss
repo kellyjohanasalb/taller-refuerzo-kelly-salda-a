@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap');
+
+/* Colors */
+$primary-color: #E8DAEF;
+$secondary-color: #61DAFA;
+$tertiary-color: #FAFAFA;
+$four-color: #FAD7A0;
+
+$primary-text-color: #171A1F;
+$secondary-text-color: #8F949F;
+$tertiary-text-color: #323842;
+
+/* Fonts */
+$font-source: 'Sarabun', sans-serif;
+$regular-weight: 400;
+$medium-weight: 500;
+$bold-weight: 700;
+
+/* Border radius */
+$general-border-radius: 22px;
+$form-border-radius: 4px;
+$drawer-border-radius: 23px;
+$inputs-border-radius: 18px;
+
+/* Screen sizes */
+$mobile-width: 414px; 
+$mobile-height: 869px; 
+$desktop-width: 1280px;
+$desktop-height: 720px;
