@@ -2,8 +2,8 @@ import './TodoList.scss'
 
 const TodoList = ({ children }) => {
   return (
-    <ul>
-        {children}
+    <ul className="TodoList">
+     {children}
     </ul>
   )
 }

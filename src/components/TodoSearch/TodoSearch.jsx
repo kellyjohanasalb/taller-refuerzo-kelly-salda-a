@@ -2,7 +2,16 @@ import './TodoSearch.scss'
 
 const TodoSearch = () => {
   return (
-    <input type="text" placeholder='cortar cebolla'/>
+    <input
+      placeholder="Cortar cebolla"
+      className="TodoSearch"
+      onChange={(event) => {
+        console.log('Escribiste en el TodoSearch');
+        console.log(event);
+        console.log(event.target);
+        console.log(event.target.value);
+      }}
+    />
   )
 }
 
