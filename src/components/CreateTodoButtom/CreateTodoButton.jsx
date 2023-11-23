@@ -1,11 +1,16 @@
-import './CreateTodoButton.scss'
+import "./CreateTodoButton.scss";
 
 const CreateTodoButton = () => {
   return (
-    <button className='CreateTodoButton'>
-      +
-    </button>
-  )
-}
+    <button
+      className="CreateTodoButton"
+      onClick={(event) => {
+        console.log("le diste click");
+        console.log(event);
+        console.log(event.target);
+      }}
+    >+</button>
+  );
+};
 
-export default CreateTodoButton
+export default CreateTodoButton;
