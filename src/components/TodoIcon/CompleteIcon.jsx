@@ -1,9 +1,10 @@
-import React from 'react';
-import { TodoIcon } from './';
+/* eslint-disable react/prop-types */
+
+import  TodoIcon  from './index';
 
 function CompleteIcon({ completed, onComplete }) {
   return (
-    <TodoIcon
+    < TodoIcon 
       type="check"
       color={completed ? '#4caf50' : 'gray'}
       onClick={onComplete}
@@ -11,4 +12,4 @@ function CompleteIcon({ completed, onComplete }) {
   );
 }
 
-export { CompleteIcon };
+export  default CompleteIcon ;

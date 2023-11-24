@@ -1,17 +1,17 @@
-
+/* import { useState }  from 'react' */
 import  useTodos  from '../useTodos';
-import  TodoHeader  from '../../ui/TodoHeader';
-import  TodoCounter  from '../../ui/TodoCounter';
-import  TodoSearch  from '../../ui/TodoSearch';
-import  TodoList  from '../../ui/TodoList';
-import  TodoItem  from '../../ui/TodoItem';
-import  TodosError  from '../../ui/TodosError';
-import  TodosLoading from '../../ui/TodosLoading';
-import  EmptyTodos  from '../../ui/EmptyTodos';
-import  TodoForm from '../../ui/TodoForm';
-import  CreateTodoButton  from '../../ui/CreateTodoButton';
-import  Modal  from '../../ui/Modal';
-import ChangeAlert  from '../../ui/ChangeAlert';
+import  TodoHeader  from '../../components/TodoHeader';
+import  TodoCounter  from '../../components/TodoCounter';
+import  TodoSearch  from '../../components/TodoSearch';
+import  TodoList  from '../../components/TodoList';
+import  TodoItem  from '../../components/TodoItem';
+import  TodosError  from '../../components/TodosError';
+import  TodosLoading from '../../components/TodosLoading';
+import  EmptyTodos  from '../../components/EmptyTodos';
+import  TodoForm from '../../components/TodoForm';
+import  CreateTodoButton  from '../../components/CreateTodoButton';
+import  Modal  from '../../components/Modal';
+import ChangeAlert  from '../../components/ChangeAlert';
 
 const HomePage = () => {
   const { state, stateUpdaters } = useTodos();

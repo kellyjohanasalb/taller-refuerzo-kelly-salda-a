@@ -1,8 +1,8 @@
 
 import {  BrowserRouter , Route, Routes } from 'react-router-dom';
-import { EditTodoPage } from './edit/EditTodoPage';
-import { HomePage } from './home/HomePage';
-import { NewTodoPage } from './new/NewTodoPage';
+import  EditTodoPage  from './edit/EditTodoPage';
+import  HomePage  from './home/HomePage';
+import  NewTodoPage  from './new/NewTodoPage';
 
 
 const AppRoutes = () => {

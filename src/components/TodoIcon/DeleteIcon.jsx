@@ -1,5 +1,6 @@
-import React from 'react';
-import { TodoIcon } from './';
+/* eslint-disable react/prop-types */
+
+import  TodoIcon  from './index';
 
 function DeleteIcon({ onDelete }) {
   return (
@@ -10,4 +11,4 @@ function DeleteIcon({ onDelete }) {
   );
 }
 
-export { DeleteIcon };
+export default DeleteIcon ;

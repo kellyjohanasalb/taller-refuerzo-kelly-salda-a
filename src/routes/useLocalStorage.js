@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React from 'react';
+import { useEffect, useReducer } from 'react';
 
 function useLocalStorage(itemName, initialValue) {
-  const [state, dispatch] = React.useReducer(reducer, initialState({ initialValue }));
+  const [state, dispatch] = useReducer(reducer, initialState({ initialValue }));
   const {
     sincronizedItem,
     error,
@@ -30,7 +30,7 @@ function useLocalStorage(itemName, initialValue) {
     type: actionTypes.sincronize,
   });
   
-  React.useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       try {
         const localStorageItem = localStorage.getItem(itemName);

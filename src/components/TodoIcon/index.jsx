@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
-import { ReactComponent as CheckSVG } from './check.svg';
-import { ReactComponent as DeleteSVG } from './delete.svg';
+import  CheckSVG  from './check.svg';
+import   DeleteSVG  from './delete.svg';
 import './TodoIcon.scss';
 
 const iconTypes = {
