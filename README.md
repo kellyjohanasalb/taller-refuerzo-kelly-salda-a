@@ -114,4 +114,47 @@ function ComponenteHijo() {
   // Usa el valor del contexto aquí
 }
 ```
+##### ¿Cuál es la ventaja de utilizar React Context en lugar de pasar props a través de múltiples componentes?
+<p>
+Mientras que React Context es una herramienta poderosa para evitar el prop drilling y gestionar el estado global, es importante usarlo de manera adecuada. Un uso excesivo o incorrecto puede llevar a problemas de rendimiento y dificultades en el seguimiento del flujo de datos. Se recomienda usarlo cuando realmente aporta claridad y eficiencia al manejo del estado en tu aplicación React.
+</p>
+
+##### Explicar el propósito de useReducer en React y cómo se diferencia de useState
+<p>
+useReducer es un hook  que se utiliza para manejar estados más complejos y lógicas de actualización del estado en componentes funcionales. Ofrece una alternativa a useState, especialmente útil cuando se tiene un estado lógicamente complejo o cuando la próxima actualización del estado depende del estado anterior.
+</p>
+##### Describe los argumentos que toma la función useReducer
+- Función Reductora :  
+Es como el conjunto de reglas. Esta función decide qué hacer con los datos (estado) de tu aplicación cada vez que quieres cambiarlos.
+
+-  Estado Inicial (Initial State):
+ Es como comenzar con una cantidad específica de juguetes en la caja. Si dices "comienzo con 5 juguetes", eso es tu estado inicial.
+
+##### ¿Por qué es útil utilizar useReducer para gestionar el estado en aplicaciones más complejas?
+<p>
+útil por varias razones, especialmente cuando se compara con el uso de useState, que puede ser más sencillo pero menos potente para ciertos escenarios.
+</p>
+- Manejo de Estados Complejos
+-  Lógica Centralizada
+- Previsibilidad y Consistencia
+- Optimización del Rendimiento
+
+##### ¿Cómo se puede utilizar React Context junto con useReducer para gestionar el estado global en una aplicación de React?
+
+<p>
+es una forma poderosa de gestionar el estado global en una aplicación. Esta combinación permite centralizar la lógica de estado y proporcionar un acceso fácil a ese estado y a las funciones para actualizarlo desde cualquier componente en la aplicación, sin necesidad de pasar props innecesariamente a través de múltiples niveles.
+</p>
+
+##### ¿Por qué es importante tener un sistema de gestión de estado global en aplicaciones React más grandes?
+<p>
+ Es importante porque a  medida que una aplicación crece en complejidad y tamaño, la gestión eficiente del estado se convierte en un componente crucial para mantener la aplicación organizada, eficiente y fácil de mantener.
+</p>
+##### Menciona al menos tres ventajas de utilizar una combinación de React Context y useReducer en comparación con el manejo de  estado local en componentes.
+- Gestión Centralizada del Estado
+- Mantenimiento y Escalabilidad
+- Mejor Rendimiento en Aplicaciones Grandes
+<p>
+La combinación de React Context y useReducer proporciona una solución robusta y eficiente para la gestión del estado global en aplicaciones React, especialmente en aquellas de mayor escala y complejidad.
+</p>
+
 
