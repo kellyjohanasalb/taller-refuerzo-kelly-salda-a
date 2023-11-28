@@ -157,4 +157,9 @@ es una forma poderosa de gestionar el estado global en una aplicación. Esta com
 La combinación de React Context y useReducer proporciona una solución robusta y eficiente para la gestión del estado global en aplicaciones React, especialmente en aquellas de mayor escala y complejidad.
 </p>
 
+##### ¿En qué situaciones podría ser beneficioso migrar de un enfoque de manejo de estado local a un enfoque de estado global utilizando React Context y useReducer?
+<p>
+Cuando tu aplicación crece y varios componentes en diferentes niveles del árbol de componentes necesitan acceder o modificar el mismo estado, la gestión de estado local se vuelve ineficiente.  tambien si se encuentra pasando props a través de varios niveles de componentes (prop drilling) para llegar a componentes profundos en la jerarquía, es una señal de que nos indica que se podría beneficiar de un estado global.
+</p>
+
 
