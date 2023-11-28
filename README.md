@@ -32,3 +32,86 @@ se puede decir que los hooks nos permiten enganchar  caracteristicas de react co
 - solo llamar los hooks en el nivel superior.
 - se deben llamar los hooks en componentes o hooks personalizados
 - no llamar hooks condicionalmente.
+
+#####  Explicar qué es React Router DOM versión 6, para qué se utiliza y cuáles son sus principales componentes y Hooks.
+<p>
+React router dom es una biblioteca nos permite manejar rutas en aplicaciones web creadas con react
+</p>
+###### sus principales componentes son :
+- BrowserRouter
+- Routes
+- Route
+- Link
+- Navlink 
+- Outlet
+###### Hooks Principales
+- useNavigate
+- useParams
+- useLocation
+- useRoutes
+#####  Explicar cómo se realiza la navegación entre diferentes páginas utilizando React Router DOM.
+<p>
+se le da una un enrutramiento con un archivo de approuter, despues creas un -navlink para navegacion entre paginas en ves de usar  (a href) sin  tener que recargr la pagina, y ya para una navegacion programatica se usa  useNavigate.
+</p>
+
+##### ¿Cómo se definen rutas en React Router DOM?
+<p>
+Las rutas en React Router DOM se definen usando BrowserRouter como envoltorio, Routes para agrupar las rutas, y Route para cada ruta específica. Se puede crear rutas anidadas y rutas con parámetros según las necesidades de la aplicación.
+</p>
+
+##### Describir cómo crear un proyecto ReactJS con Vite
+<p>
+usamos esta comando npm create vite@latest my-vue-app -- --template react y de ahi ya limpiamos los archivos que carga por defecto y que no vamos a usar y listo.
+</p>
+
+##### Describir cómo desplegar un JSON server en cualquier Hosting free o servicio en la nube gratuito de su elección
+<p>
+se instala axios, y despues de tener un archivo json procedemos a buscar nuestro servicio como reilway, entramos y damos nuevo proyecto y escogemos en repositorio del cual vamos a desplegar, de ahi entramos y le damos que nos reciba todo los repositorios, save y buscamos el repo  y le damos el deploy y esperamos y listo. aqui respondo la pregunda 12 y 13
+</p>
+
+##### ¿Qué es React Context y para qué se utiliza en el desarrollo web con React?
+<p>
+ es una característica de React que nos permite compartir valores como preferencias, temas, datos de autenticación, etc., entre componentes sin necesidad de pasar explícitamente props a través de cada nivel de los componentes. Y se utuliza para darle como una inyeccion de depencias a nivel de toda la aplicacion o una parte de ella, lo que facilita la gestion del estado global</p>
+
+ # MÓDULO SOBRE GESTION DE ESTADOS Y DATOS CON REACT CONTEXT Y USEREDUCER 
+##### Describir cómo se crea un contexto en React y cómo se proporciona y consume información a través de él
+-  primero creamos un contecto 
+
+```
+// MiContexto.js
+import React from 'react';
+
+const MiContexto = React.createContext(valorPorDefecto); // Puedes establecer un valor por defecto aquí
+export default MiContexto;
+
+```
+- un provaider
+
+```
+// App.js
+import React from 'react';
+import MiContexto from './MiContexto';
+
+function App() {
+  const valorDelContexto = { /* algún estado o valor */ };
+
+  return (
+    <MiContexto.Provider value={valorDelContexto}>
+      {/* El resto de tu aplicación */}
+    </MiContexto.Provider>
+  );
+}
+```
+- y de ahi usamos el useContext para consumir
+
+```
+// ComponenteHijo.js
+import React, { useContext } from 'react';
+import MiContexto from './MiContexto';
+
+function ComponenteHijo() {
+  const valor = useContext(MiContexto);
+  // Usa el valor del contexto aquí
+}
+```
+
